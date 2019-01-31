@@ -20,4 +20,5 @@ end
     array.grep(String)
   end
   
-  def
+  def count_elements(array)
+    array.count? 
