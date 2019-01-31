@@ -16,5 +16,6 @@ def first_wa(array)
   end
 end
 
-  
+  def remove_non_string(array)
+    array.grep
   
