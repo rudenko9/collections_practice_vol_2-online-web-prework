@@ -20,3 +20,4 @@ end
     array.grep(String)
   end
   
+  def
