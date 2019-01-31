@@ -21,5 +21,7 @@ end
   end
   
   def count_elements(array)
-    array.count
+    array.count do |count|
+      count.each
+    end
   end
