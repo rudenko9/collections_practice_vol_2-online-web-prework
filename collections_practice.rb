@@ -17,9 +17,5 @@ def first_wa(array)
   end
 end
 
-def find_cool(cool)
-  cool.find do |cool|
-  end
-end
   
   
