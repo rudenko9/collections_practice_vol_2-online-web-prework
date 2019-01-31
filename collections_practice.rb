@@ -1,9 +1,8 @@
 def begins_with_r(array)
   array.all? do |words|
-  if words.start_with?("r")
+  words.start_with?("r")
 end
 end
-
 
 def contain_a(array)
   array.select do |words|
