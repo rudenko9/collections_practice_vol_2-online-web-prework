@@ -21,7 +21,10 @@ end
   end
   
   def count_elements(array)
-  array.each do |words|
-    count[words] += 1
+  array.group_by(&:itself)
+  .map do |k, v|
+    k.merge(count: v.length)
       end
   end
+  
+  
