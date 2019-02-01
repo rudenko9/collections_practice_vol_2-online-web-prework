@@ -27,4 +27,8 @@ end
       end
   end
   
-  
+  def merge_data(keys, data)
+    data[0].values.map.with_index do |r, i|
+      keys[i].merge(r)
+    end 
+  end
