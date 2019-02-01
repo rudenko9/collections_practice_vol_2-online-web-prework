@@ -21,7 +21,7 @@ end
   end
   
   def count_elements(array)
-    array.count do |count|
-      
-    end
+  array.each do |words|
+    count[words] += 1
+      end
   end
