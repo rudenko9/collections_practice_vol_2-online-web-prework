@@ -38,3 +38,17 @@ end
       hash[:temperature] == "cool"
     end
   end
+  
+  def organize_schools(schools)
+    schools_by_location = {}
+    schools.each do |key, value|
+      if (schools_by_location[value[:location]] == nil)
+        schools_by_location[value[:location]] = [key]
+      else
+        schools_by_location[value[:location]] << key
+      end
+    end
+    schools_by_location
+  end
+  
+        
