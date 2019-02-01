@@ -32,3 +32,9 @@ end
       keys[i].merge(r)
     end 
   end
+  
+  def find_cool(cool)
+    cool.select do |hash|
+      hash[:temperature] == "cool"
+    end
+  end
